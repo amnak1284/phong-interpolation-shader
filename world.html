@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Draw a point (1)</title>
+    <link rel="stylesheet" type="text/css" href="world.css">
+  </head>
+
+  <body onload="main()">
+    <h1>Assignment 2</h1>
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <br>
+   
+
+
+
+<p>
+  NORMAL BUTTON ON  <button type="=button" id="normalOn">ON</button>  
+  NORMAL BUTTON off:  <button type="=button" id="normalOff">OFF</button>  
+</p>
+<p>
+ Light BUTTON ON  <button type="=button" id="lightOn">ON</button>  
+  Light BUTTON off:  <button type="=button" id="lightOff">OFF</button>  
+</p>
+
+<p>
+  Light X <input type="range" min="-250" max="250" value =0 class="slider" id="lightSlideX">
+  Light Y <input type="range" min="-250" max="250" value = 100 class="slider" id="lightSlideY">
+  Light Z <input type="range" min="-250" max="250" value = 100 class="slider" id="lightSlideZ">
+</p>
+
+
+       <p>
+        Head <input type="range" min = "-34" max = "50" value="0" class="slider" id="pinkSlide"/>   
+        Animation: <button type="=button" id="animationOnHead">ON</button>
+        <button type="=button" id="animationOffHead">OFF</button>  
+       </p>
+
+       <p>
+        Body<input type="range" min = "-45" max = "45" value="0" class="slider" id="beakSlide"/> 
+        Animation: <button type="=button" id="animationOn">ON</button>
+        <button type="=button" id="animationOff">OFF</button>  
+       
+       </p>
+       <p>
+         Right Arm <input type = "range" min = "45" max ="90" value = 90 class="slider" id="rightArmSlide"/>
+         Animation: <button type="=button" id="animationOnArm">ON</button>
+        <button type="=button" id="animationOffArm">OFF</button>  
+       </p>
+
+
+
+       
+
+       <p>
+         Camera Angle <input type="range" min="0" max="90" value="5" class="slider" id="angleSlide"/>
+       </p>
+    
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="camera.js"></script>
+    <script src="world.js"></script>
+   
+  </body>
+</html>

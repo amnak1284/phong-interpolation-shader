@@ -1,0 +1,55 @@
+h1 {
+    color:skyblue;
+    padding-left: 15px;
+    
+    
+}
+button {
+    background-color: blanchedalmond;
+    color: black;
+    border: 2px solid skyblue; /* Green */
+    color:skyblue;
+    
+    
+    
+    padding-bottom: 5px;
+  }
+
+ button:hover {
+background-color: skyblue;
+color: white;
+
+animation-name: spin;
+animation-duration: 2s;
+
+  }
+  #redc {
+    color:rgb(158, 10, 10);
+}
+#bluec {
+    color:rgb(57, 57, 202);
+}
+ #greenc {
+     color:rgb(29, 143, 29);
+ }
+  
+  .color-buttons{
+      padding-left:5px;
+  }
+  .shape-button{
+      padding-left: 5px;
+  }
+  
+  @keyframes spin{
+      0% {transform: rotate(0deg);}
+      50% {transform: rotate(180deg);}
+      100% {transform: rotate(360deg);}
+
+  }
+  
+  body{
+      background-color: blanchedalmond;
+      background-image: linear-gradient(to right, blanchedalmond , skyblue);
+  }
+
+ 
